@@ -1,15 +1,15 @@
 {
-  "main.css": "/pokeasa-generator/static/css/main.a77b03d3.chunk.css",
-  "main.js": "/pokeasa-generator/static/js/main.d1ca1bd6.chunk.js",
-  "main.js.map": "/pokeasa-generator/static/js/main.d1ca1bd6.chunk.js.map",
-  "static/js/1.4587b355.chunk.js": "/pokeasa-generator/static/js/1.4587b355.chunk.js",
-  "static/js/1.4587b355.chunk.js.map": "/pokeasa-generator/static/js/1.4587b355.chunk.js.map",
-  "static/js/2.9768bc59.chunk.js": "/pokeasa-generator/static/js/2.9768bc59.chunk.js",
-  "static/js/2.9768bc59.chunk.js.map": "/pokeasa-generator/static/js/2.9768bc59.chunk.js.map",
-  "runtime~main.js": "/pokeasa-generator/static/js/runtime~main.8b3e74e9.js",
-  "runtime~main.js.map": "/pokeasa-generator/static/js/runtime~main.8b3e74e9.js.map",
-  "static/css/main.a77b03d3.chunk.css.map": "/pokeasa-generator/static/css/main.a77b03d3.chunk.css.map",
-  "index.html": "/pokeasa-generator/index.html",
-  "precache-manifest.91899331a7751b17873af778e10e5fea.js": "/pokeasa-generator/precache-manifest.91899331a7751b17873af778e10e5fea.js",
-  "service-worker.js": "/pokeasa-generator/service-worker.js"
+  "files": {
+    "main.css": "/pokeasa-generator/static/css/main.964fdded.css",
+    "main.js": "/pokeasa-generator/static/js/main.6cc72878.js",
+    "static/js/787.0bd96207.chunk.js": "/pokeasa-generator/static/js/787.0bd96207.chunk.js",
+    "index.html": "/pokeasa-generator/index.html",
+    "main.964fdded.css.map": "/pokeasa-generator/static/css/main.964fdded.css.map",
+    "main.6cc72878.js.map": "/pokeasa-generator/static/js/main.6cc72878.js.map",
+    "787.0bd96207.chunk.js.map": "/pokeasa-generator/static/js/787.0bd96207.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.964fdded.css",
+    "static/js/main.6cc72878.js"
+  ]
 }
