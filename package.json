@@ -13,7 +13,7 @@
     "@types/wanakana": "^4.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "^2.1.3",
+    "react-scripts": "^5.0.1",
     "typescript": "^4.9.5",
     "wanakana": "^5.1.0",
     "web-vitals": "^2.1.4"
@@ -22,9 +22,9 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
-    "test": "NODE_OPTIONS=--openssl-legacy-provider react-scripts test",
-    "eject": "NODE_OPTIONS=--openssl-legacy-provider react-scripts eject"
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +46,7 @@
   },
   "homepage": "https://ukikagi.jp/pokeasa-generator",
   "devDependencies": {
-    "gh-pages": "^6.0.0"
+    "gh-pages": "^6.0.0",
+    "@babel/plugin-proposal-private-property-in-object": "*"
   }
 }
