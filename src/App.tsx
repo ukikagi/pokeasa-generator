@@ -1,23 +1,29 @@
 import React, { useState } from "react";
 import "./App.css";
-import { generateParty } from "./generateParty";
+import { generateParty, Result } from "./generateParty";
 
 interface ResultProp {
-  result: Array<[string, Array<string>]> | null;
+  results: Array<Result> | null;
 }
 
-const Result = ({ result }: ResultProp) => {
-  if (result === null) {
-    return <div>生成できませんでした</div>;
+const Results = ({ results }: ResultProp) => {
+  if (results === null) {
+    return null;
+  }
+  if (results.length === 0) {
+    return <div>分割が存在しません</div>;
   }
   let ls = [];
-  for (const idx in result) {
-    const [split, examples] = result[idx];
-    ls.push(
-      <div key={idx}>
-        {split} =&gt; {JSON.stringify(examples)}{" "}
-      </div>
-    );
+  for (const result of results) {
+    for (const idx in result) {
+      const [split, examples] = result[idx];
+      ls.push(
+        <div key={idx}>
+          {split} =&gt; {JSON.stringify(examples)}
+        </div>
+      );
+    }
+    ls.push(<hr />);
   }
   return <>{ls}</>;
 };
@@ -25,9 +31,9 @@ const Result = ({ result }: ResultProp) => {
 function App() {
   const [partyName, setPartyName] = useState("");
   const [useOnlyPrefix, setUseOnlyPrefix] = useState(false);
-  const [result, setResult] = useState<Array<[string, Array<string>]> | null>([]);
+  const [parties, setParties] = useState<Array<Result> | null>(null);
   const handleClick = () => {
-    setResult(generateParty(partyName, 1, useOnlyPrefix, 3, 6));
+    setParties(generateParty(partyName, useOnlyPrefix, 6));
   };
 
   return (
@@ -52,7 +58,7 @@ function App() {
       <hr />
       <button onClick={handleClick}>生成</button>
       <hr />
-      <Result result={result} />
+      <Results results={parties} />
     </div>
   );
 }

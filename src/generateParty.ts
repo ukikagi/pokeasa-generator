@@ -1,25 +1,25 @@
 import pokemon from "./pokemon.json";
-import { toKatakana } from 'wanakana';
+import { toKatakana } from "wanakana";
+
+export type Result = Array<[string, Array<string>]>;
 
 function range(n: number): Array<number> {
   return Array.from({ length: n }, (_, k) => k);
 }
 
 export function shouldExclude(slice: string): boolean {
-  // TODO: Implement this
-  return false;
+  return Boolean(slice.match(/^[ァィゥェォャュョ]/));
 }
 
 export function createVocab(
   pokeNames: Array<string>,
-  minLength: number,
   onlyPrefix: boolean
 ): Record<string, Array<string>> {
   const vocab: Record<string, Array<string>> = {};
   for (const pokeName of pokeNames) {
     const maxLeft = onlyPrefix ? 0 : pokeName.length;
     for (let i = 0; i <= maxLeft; i++) {
-      for (let j = i + minLength; j <= pokeName.length; j++) {
+      for (let j = i + 1; j <= pokeName.length; j++) {
         const slice = pokeName.slice(i, j);
         if (shouldExclude(slice)) {
           continue;
@@ -31,6 +31,11 @@ export function createVocab(
       }
     }
   }
+  for (const slice in vocab) {
+    if (slice.length === 1 && vocab[slice].length > 5) {
+      vocab[slice] = [slice + "のつくポケモン"];
+    }
+  }
   return vocab;
 }
 
@@ -38,7 +43,7 @@ export function splitInput(
   input: string,
   numToken: number,
   vocab: Set<string>
-): Array<string> | null {
+): Array<Array<string>> {
   const length = input.length;
 
   // posible[i][j]: can construct input[:i] using j elems in vocab
@@ -56,37 +61,37 @@ export function splitInput(
   }
 
   if (!possible[length][numToken]) {
-    return null;
+    return [];
   }
 
-  // Reconstruct a split
-  // TODO: Make it return multiple splits
-  let result: Array<string> = [];
-  let r = length;
-  for (let j = numToken - 1; j >= 0; j--) {
+  // Reconstruct splits
+  function reconstruct(r: number, k: number): Array<Array<string>> {
+    if (r === 0 && k === 0) {
+      return [[]];
+    }
+    const results = [];
     for (let l = r - 1; l >= 0; l--) {
-      if (possible[l][j]) {
-        result.unshift(input.slice(l, r));
-        r = l;
-        break;
+      if (possible[l][k - 1] && vocab.has(input.slice(l, r))) {
+        const splits = reconstruct(l, k - 1);
+        for (const split of splits) {
+          split.push(input.slice(l, r));
+        }
+        results.push(...splits);
       }
     }
+    return results;
   }
-  return result;
+
+  return reconstruct(length, numToken);
 }
 
 export function generateParty(
   input: string,
-  minTokenLength: number,
   useOnlyPrefix: boolean,
-  maxExamples: number,
   numPokemon: number
-): Array<[string, Array<string>]> | null {
+): Array<Result> {
   input = toKatakana(input);
-  const vocab = createVocab(pokemon, minTokenLength, useOnlyPrefix);
-  const split = splitInput(input, numPokemon, new Set(Object.keys(vocab)));
-  if (split === null) {
-    return null;
-  }
-  return split.map((x) => [x, vocab[x].slice(0, maxExamples)]);
+  const vocab = createVocab(pokemon, useOnlyPrefix);
+  const splits = splitInput(input, numPokemon, new Set(Object.keys(vocab)));
+  return splits.map((split) => split.map((x) => [x, vocab[x]]));
 }
