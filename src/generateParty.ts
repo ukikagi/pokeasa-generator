@@ -1,4 +1,5 @@
 import pokemon from "./pokemon.json";
+import { toKatakana } from 'wanakana';
 
 function range(n: number): Array<number> {
   return Array.from({ length: n }, (_, k) => k);
@@ -81,6 +82,7 @@ export function generateParty(
   maxExamples: number,
   numPokemon: number
 ): Array<[string, Array<string>]> | null {
+  input = toKatakana(input);
   const vocab = createVocab(pokemon, minTokenLength, useOnlyPrefix);
   const split = splitInput(input, numPokemon, new Set(Object.keys(vocab)));
   if (split === null) {
