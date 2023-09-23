@@ -39,7 +39,7 @@ function App() {
   return (
     <div className="App">
       <label>
-        パーティー名:{" "}
+        パーティー名:
         <input
           type="text"
           value={partyName}
@@ -48,7 +48,15 @@ function App() {
       </label>
       <hr />
       <label>
-        接頭辞のみを使う:{" "}
+        ポケモンの数:
+        <input
+          type="checkbox"
+          checked={useOnlyPrefix}
+          onChange={(e) => setUseOnlyPrefix(e.target.checked)}
+        />
+      </label>
+      <label>
+        接頭辞のみを使う:
         <input
           type="checkbox"
           checked={useOnlyPrefix}
