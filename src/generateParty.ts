@@ -12,6 +12,7 @@ export function createVocab(
   onlyPrefix: boolean
 ): Record<string, Array<string>> {
   const vocab: Record<string, Array<string>> = {};
+
   function addPokemon(slice: string, pokeName: string) {
     if (shouldExclude(slice)) {
       return;
@@ -38,11 +39,6 @@ export function createVocab(
     }
   }
 
-  for (const slice in vocab) {
-    if (slice.length === 1 && vocab[slice].length > 5) {
-      vocab[slice] = [slice + "で始まるポケモン"];
-    }
-  }
   return vocab;
 }
 

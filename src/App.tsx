@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import { generateParty, Party } from "./generateParty";
 import {
+  Box,
   Button,
   Checkbox,
   Chip,
@@ -18,6 +19,26 @@ import {
   TextField,
 } from "@mui/material";
 
+const Examples = ({ pokemons }: { pokemons: Array<string> }) => {
+  if (pokemons.length > 5) {
+    return (
+      <Stack direction="row" alignItems="flex-end" spacing={1}>
+        {pokemons.slice(0, 5).map((pokemon, idx) => (
+          <Chip key={idx} label={pokemon} />
+        ))}
+        <Box>など</Box>
+      </Stack>
+    );
+  }
+  return (
+    <Stack direction="row" spacing={1}>
+      {pokemons.map((pokemon, idx) => (
+        <Chip key={idx} label={pokemon} />
+      ))}
+    </Stack>
+  );
+};
+
 const PartyCard = ({ party }: { party: Party }) => {
   return (
     <TableContainer component={Paper}>
@@ -27,11 +48,7 @@ const PartyCard = ({ party }: { party: Party }) => {
             <TableRow key={idx}>
               <TableCell>{span}</TableCell>
               <TableCell>
-                <Stack direction="row" spacing={1}>
-                  {examples.map((example, idx) => (
-                    <Chip key={idx} label={example} />
-                  ))}
-                </Stack>
+                <Examples pokemons={examples} />
               </TableCell>
             </TableRow>
           ))}
