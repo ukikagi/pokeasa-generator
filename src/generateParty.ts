@@ -1,14 +1,10 @@
 import pokemon from "./pokemon.json";
 import { toKatakana } from "wanakana";
 
-export type Result = Array<[string, Array<string>]>;
-
-function range(n: number): Array<number> {
-  return Array.from({ length: n }, (_, k) => k);
-}
+export type Party = Array<[string, Array<string>]>;
 
 export function shouldExclude(slice: string): boolean {
-  return Boolean(slice.match(/^[ァィゥェォャュョ]/));
+  return false;
 }
 
 export function createVocab(
@@ -17,9 +13,20 @@ export function createVocab(
 ): Record<string, Array<string>> {
   const vocab: Record<string, Array<string>> = {};
   for (const pokeName of pokeNames) {
+    {
+      const slice = pokeName.slice(0, 1);
+      if (shouldExclude(slice)) {
+        continue;
+      }
+      if (!(slice in vocab)) {
+        vocab[slice] = [];
+      }
+      vocab[slice].push(pokeName);
+    }
+
     const maxLeft = onlyPrefix ? 0 : pokeName.length;
     for (let i = 0; i <= maxLeft; i++) {
-      for (let j = i + 1; j <= pokeName.length; j++) {
+      for (let j = i + 2; j <= pokeName.length; j++) {
         const slice = pokeName.slice(i, j);
         if (shouldExclude(slice)) {
           continue;
@@ -31,9 +38,10 @@ export function createVocab(
       }
     }
   }
+
   for (const slice in vocab) {
     if (slice.length === 1 && vocab[slice].length > 5) {
-      vocab[slice] = [slice + "のつくポケモン"];
+      vocab[slice] = [slice + "で始まるポケモン"];
     }
   }
   return vocab;
@@ -54,7 +62,7 @@ export function splitInput(
   possible[0][0] = true;
   for (let j = 1; j <= numToken; j++) {
     for (let i = 0; i <= input.length; i++) {
-      possible[i][j] = range(i).some(
+      possible[i][j] = Array.from({ length: i }, (_, k) => k).some(
         (k) => possible[k][j - 1] && vocab.has(input.slice(k, i))
       );
     }
@@ -89,7 +97,7 @@ export function generateParty(
   input: string,
   useOnlyPrefix: boolean,
   numPokemon: number
-): Array<Result> {
+): Array<Party> {
   input = toKatakana(input);
   const vocab = createVocab(pokemon, useOnlyPrefix);
   const splits = splitInput(input, numPokemon, new Set(Object.keys(vocab)));
