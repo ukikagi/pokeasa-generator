@@ -1,5 +1,13 @@
-import pokemon from "./pokemon.json";
+import pokemon_json from "./pokemon.json";
 import { toKatakana } from "wanakana";
+
+interface Pokemon {
+  id: number;
+  is_mythical: boolean;
+  is_legendary: boolean;
+  generation_id: number;
+  pokemon_v2_pokemonspeciesnames: Array<{ name: string }>;
+}
 
 export type Party = Array<[string, Array<string>]>;
 
@@ -8,7 +16,7 @@ export function shouldExclude(slice: string): boolean {
 }
 
 export function createVocab(
-  pokeNames: Array<string>,
+  pokemons: Array<Pokemon>,
   onlyPrefix: boolean
 ): Record<string, Array<string>> {
   const vocab: Record<string, Array<string>> = {};
@@ -25,7 +33,12 @@ export function createVocab(
     }
   }
 
-  for (const pokeName of pokeNames) {
+  for (const pokemon of pokemons) {
+    if (pokemon.generation_id > 6) {
+      continue;
+    }
+    const pokeName = pokemon.pokemon_v2_pokemonspeciesnames[0].name;
+
     for (let j = 1; j <= pokeName.length; j++) {
       addPokemon(pokeName.slice(0, j), pokeName);
     }
@@ -94,7 +107,7 @@ export function generateParty(
   numPokemon: number
 ): Array<Party> {
   input = toKatakana(input);
-  const vocab = createVocab(pokemon, useOnlyPrefix);
+  const vocab = createVocab(pokemon_json.data.pokemon, useOnlyPrefix);
   const splits = splitInput(input, numPokemon, new Set(Object.keys(vocab)));
   return splits.map((split) => split.map((x) => [x, vocab[x]]));
 }

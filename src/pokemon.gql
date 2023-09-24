@@ -1,0 +1,17 @@
+"""
+pokemon.json is generated with PokéAPI GraphQL (https://pokeapi.co/docs/graphql) by the following query.
+
+* PokeAPI is created by Paul Hallett and other PokéAPI contributors around the world. Pokémon and Pokémon character names are trademarks of Nintendo.
+"""
+
+query getPokemonWithJaName {
+  pokemon: pokemon_v2_pokemonspecies(order_by: { id: asc }) {
+    id
+    is_mythical
+    is_legendary
+    generation_id
+    pokemon_v2_pokemonspeciesnames(where: { language_id: { _eq: 1 } }) {
+      name
+    }
+  }
+}

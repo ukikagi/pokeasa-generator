@@ -20,47 +20,47 @@ import {
 } from "@mui/material";
 
 const Examples = ({ pokemons }: { pokemons: Array<string> }) => {
-  if (pokemons.length > 5) {
+  const MAX_LENGTH = 5;
+  if (pokemons.length > MAX_LENGTH) {
     return (
       <Stack direction="row" alignItems="flex-end" spacing={1}>
-        {pokemons.slice(0, 5).map((pokemon, idx) => (
+        {pokemons.slice(0, MAX_LENGTH).map((pokemon, idx) => (
           <Chip key={idx} label={pokemon} />
         ))}
         <Box>など</Box>
       </Stack>
     );
+  } else {
+    return (
+      <Stack direction="row" alignItems="flex-end" spacing={1}>
+        {pokemons.map((pokemon, idx) => (
+          <Chip key={idx} label={pokemon} />
+        ))}
+      </Stack>
+    );
   }
-  return (
-    <Stack direction="row" spacing={1}>
-      {pokemons.map((pokemon, idx) => (
-        <Chip key={idx} label={pokemon} />
-      ))}
-    </Stack>
-  );
 };
 
-const PartyCard = ({ party }: { party: Party }) => {
-  return (
-    <TableContainer component={Paper}>
-      <Table>
-        <TableBody>
-          {party.map(([span, examples], idx) => (
-            <TableRow key={idx}>
-              <TableCell>{span}</TableCell>
-              <TableCell>
-                <Examples pokemons={examples} />
-              </TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
-  );
-};
+const PartyCard = ({ party }: { party: Party }) => (
+  <TableContainer component={Paper}>
+    <Table>
+      <TableBody>
+        {party.map(([span, examples], idx) => (
+          <TableRow key={idx}>
+            <TableCell>{span}</TableCell>
+            <TableCell>
+              <Examples pokemons={examples} />
+            </TableCell>
+          </TableRow>
+        ))}
+      </TableBody>
+    </Table>
+  </TableContainer>
+);
 
-const PartyTable = ({ parties }: { parties: Array<Party> }) => {
+const PartiesTable = ({ parties }: { parties: Array<Party> }) => {
   if (parties.length === 0) {
-    return <div>分割が存在しません</div>;
+    return <Box>分割が存在しません</Box>;
   } else {
     return (
       <Stack spacing={2}>
@@ -90,7 +90,6 @@ function App() {
       <Stack spacing={3}>
         <Stack spacing={1}>
           <TextField
-            id="outlined-basic"
             label="パーティー名"
             variant="outlined"
             value={partyName}
@@ -107,7 +106,6 @@ function App() {
               label="接頭辞のみを使う"
             />
             <TextField
-              id="outlined-basic"
               label="ポケモンの数"
               variant="outlined"
               value={numPokemon}
@@ -138,7 +136,7 @@ function App() {
             生成
           </Button>
         </Stack>
-        <PartyTable parties={parties} />
+        <PartiesTable parties={parties} />
       </Stack>
     </Container>
   );
