@@ -55,6 +55,11 @@ const PartyTable = ({ parties }: { parties: Array<Party> }) => {
   }
 };
 
+function isValidNumPokemon(s: string): boolean {
+  const n = parseInt(s, 10);
+  return 2 <= n && n <= 12;
+}
+
 function App() {
   const [partyName, setPartyName] = useState("みのもんたのあさずばっ");
   const [useOnlyPrefix, setUseOnlyPrefix] = useState(true);
@@ -88,16 +93,28 @@ function App() {
               id="outlined-basic"
               label="ポケモンの数"
               variant="outlined"
-              inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
               value={numPokemon}
               onChange={(e) => setNumPokemon(e.target.value)}
+              error={!isValidNumPokemon(numPokemon)}
+              helperText={
+                isValidNumPokemon(numPokemon)
+                  ? ""
+                  : "2以上12以下の整数を入力してください"
+              }
             />
           </FormGroup>
           <Button
             variant="contained"
             onClick={() => {
+              if (!isValidNumPokemon(numPokemon)) {
+                return;
+              }
               setParties(
-                generateParty(partyName, useOnlyPrefix, parseInt(numPokemon))
+                generateParty(
+                  partyName,
+                  useOnlyPrefix,
+                  parseInt(numPokemon, 10)
+                )
               );
             }}
           >
