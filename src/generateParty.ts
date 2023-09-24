@@ -12,29 +12,28 @@ export function createVocab(
   onlyPrefix: boolean
 ): Record<string, Array<string>> {
   const vocab: Record<string, Array<string>> = {};
-  for (const pokeName of pokeNames) {
-    {
-      const slice = pokeName.slice(0, 1);
-      if (shouldExclude(slice)) {
-        continue;
-      }
-      if (!(slice in vocab)) {
-        vocab[slice] = [];
-      }
+  function addPokemon(slice: string, pokeName: string) {
+    if (shouldExclude(slice)) {
+      return;
+    }
+    if (!(slice in vocab)) {
+      vocab[slice] = [];
+    }
+    if (!vocab[slice].includes(pokeName)) {
       vocab[slice].push(pokeName);
     }
+  }
 
-    const maxLeft = onlyPrefix ? 0 : pokeName.length;
-    for (let i = 0; i <= maxLeft; i++) {
+  for (const pokeName of pokeNames) {
+    for (let j = 1; j <= pokeName.length; j++) {
+      addPokemon(pokeName.slice(0, j), pokeName);
+    }
+    if (onlyPrefix) {
+      continue;
+    }
+    for (let i = 1; i <= pokeName.length; i++) {
       for (let j = i + 2; j <= pokeName.length; j++) {
-        const slice = pokeName.slice(i, j);
-        if (shouldExclude(slice)) {
-          continue;
-        }
-        if (!(slice in vocab)) {
-          vocab[slice] = [];
-        }
-        vocab[slice].push(pokeName);
+        addPokemon(pokeName.slice(i, j), pokeName);
       }
     }
   }
