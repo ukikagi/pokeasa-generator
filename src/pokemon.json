@@ -11110,6 +11110,83 @@
             "name": "テツノイサハ"
           }
         ]
+      },
+      {
+        "id": 1011,
+        "is_mythical": false,
+        "is_legendary": false,
+        "generation_id": 9,
+        "pokemon_v2_pokemonspeciesnames": [
+          {
+            "name": "カミッチュ"
+          }
+        ]
+      },
+      {
+        "id": 1012,
+        "is_mythical": false,
+        "is_legendary": false,
+        "generation_id": 9,
+        "pokemon_v2_pokemonspeciesnames": [
+          {
+            "name": "チャデス"
+          }
+        ]
+      },
+      {
+        "id": 1013,
+        "is_mythical": false,
+        "is_legendary": false,
+        "generation_id": 9,
+        "pokemon_v2_pokemonspeciesnames": [
+          {
+            "name": "ヤバソチャ"
+          }
+        ]
+      },
+      {
+        "id": 1014,
+        "is_mythical": false,
+        "is_legendary": false,
+        "generation_id": 9,
+        "pokemon_v2_pokemonspeciesnames": [
+          {
+            "name": "イイネイヌ"
+          }
+        ]
+      },
+      {
+        "id": 1015,
+        "is_mythical": false,
+        "is_legendary": false,
+        "generation_id": 9,
+        "pokemon_v2_pokemonspeciesnames": [
+          {
+            "name": "マシマシラ"
+          }
+        ]
+      },
+      {
+        "id": 1016,
+        "is_mythical": false,
+        "is_legendary": false,
+        "generation_id": 9,
+        "pokemon_v2_pokemonspeciesnames": [
+          {
+            "name": "キチキギス"
+          }
+        ]
+      },
+      {
+        "id": 1017,
+        "is_mythical": false,
+        "is_legendary": false,
+        "generation_id": 9,
+        "pokemon_v2_pokemonspeciesnames": [
+          {
+            "name": "オーガポン"
+          }
+        ]
       }
     ]
   }
