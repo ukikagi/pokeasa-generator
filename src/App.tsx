@@ -82,7 +82,12 @@ function App() {
   const [useOnlyPrefix, setUseOnlyPrefix] = useState(true);
   const [numPokemon, setNumPokemon] = useState("6");
   const [parties, setParties] = useState<Array<Party>>(
-    generateParty(partyName, useOnlyPrefix, parseInt(numPokemon))
+    generateParty(partyName, {
+      numPokemon: parseInt(numPokemon),
+      useOnlyPrefix,
+      allowLegendary: true,
+      generationIds: new Set([1, 2, 3, 4, 5, 6]),
+    })
   );
 
   return (
@@ -125,11 +130,12 @@ function App() {
                 return;
               }
               setParties(
-                generateParty(
-                  partyName,
+                generateParty(partyName, {
+                  numPokemon: parseInt(numPokemon),
                   useOnlyPrefix,
-                  parseInt(numPokemon, 10)
-                )
+                  allowLegendary: true,
+                  generationIds: new Set([1, 2, 3, 4, 5, 6]),
+                })
               );
             }}
           >
