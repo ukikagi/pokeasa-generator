@@ -80,14 +80,38 @@ function isValidNumPokemon(s: string): boolean {
 function App() {
   const [partyName, setPartyName] = useState("みのもんたのあさずばっ");
   const [useOnlyPrefix, setUseOnlyPrefix] = useState(true);
-  const [numPokemon, setNumPokemon] = useState("6");
+  const [numPokemonStr, setNumPokemonStr] = useState("6");
+  const [generationIds, setGenerations] = useState(new Set([1, 2, 3, 4, 5, 6]));
+  const [allowLegendary, setAllowLegendary] = useState(false);
+
+  const numPokemon = parseInt(numPokemonStr);
   const [parties, setParties] = useState<Array<Party>>(
     generateParty(partyName, {
-      numPokemon: parseInt(numPokemon),
+      numPokemon,
       useOnlyPrefix,
-      allowLegendary: true,
-      generationIds: new Set([1, 2, 3, 4, 5, 6]),
+      allowLegendary,
+      generationIds,
     })
+  );
+
+  const GenerationSelector = ({ generation }: { generation: number }) => (
+    <FormControlLabel
+      control={
+        <Checkbox
+          checked={generationIds.has(generation)}
+          onChange={(e) => {
+            const gen = new Set(generationIds);
+            if (e.target.checked) {
+              gen.add(generation);
+            } else {
+              gen.delete(generation);
+            }
+            setGenerations(gen);
+          }}
+        />
+      }
+      label={"第" + generation + "世代"}
+    />
   );
 
   return (
@@ -100,7 +124,22 @@ function App() {
             value={partyName}
             onChange={(e) => setPartyName(e.target.value)}
           />
-          <FormGroup row>
+          <FormGroup row sx={{ alignItems: "center", gap: 1 }}>
+            <Box sx={{ pr: 1 }}>使用ポケモン:</Box>
+            {Array.from({ length: 9 }, (_, k) => k + 1).map((k) => (
+              <GenerationSelector generation={k} />
+            ))}
+          </FormGroup>
+          <FormGroup row sx={{ alignItems: "center", gap: 1 }}>
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={allowLegendary}
+                  onChange={(e) => setAllowLegendary(e.target.checked)}
+                />
+              }
+              label="伝説・幻のポケモンあり"
+            />
             <FormControlLabel
               control={
                 <Checkbox
@@ -113,11 +152,11 @@ function App() {
             <TextField
               label="ポケモンの数"
               variant="outlined"
-              value={numPokemon}
-              onChange={(e) => setNumPokemon(e.target.value)}
-              error={!isValidNumPokemon(numPokemon)}
+              value={numPokemonStr}
+              onChange={(e) => setNumPokemonStr(e.target.value)}
+              error={!isValidNumPokemon(numPokemonStr)}
               helperText={
-                isValidNumPokemon(numPokemon)
+                isValidNumPokemon(numPokemonStr)
                   ? ""
                   : "2以上12以下の整数を入力してください"
               }
@@ -126,15 +165,15 @@ function App() {
           <Button
             variant="contained"
             onClick={() => {
-              if (!isValidNumPokemon(numPokemon)) {
+              if (!isValidNumPokemon(numPokemonStr)) {
                 return;
               }
               setParties(
                 generateParty(partyName, {
-                  numPokemon: parseInt(numPokemon),
+                  numPokemon,
                   useOnlyPrefix,
-                  allowLegendary: true,
-                  generationIds: new Set([1, 2, 3, 4, 5, 6]),
+                  allowLegendary,
+                  generationIds,
                 })
               );
             }}

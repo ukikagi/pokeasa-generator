@@ -27,7 +27,7 @@ export function createVocab(
   pokemons: Array<Pokemon>,
   config: Config
 ): Map<string, Array<string>> {
-  const vocab: Map<string, Array<string>> = new Map();
+  const vocab = new Map<string, Array<string>>();
 
   function addPokemon(slice: string, pokeName: string) {
     if (shouldExclude(slice)) {
