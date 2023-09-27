@@ -19,7 +19,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
-    "typescript": "^4.9.5",
     "wanakana": "^5.1.0",
     "web-vitals": "^2.1.4"
   },
@@ -52,6 +51,7 @@
   "homepage": "https://ukikagi.jp/pokeasa-generator",
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "*",
-    "gh-pages": "^6.0.0"
+    "gh-pages": "^6.0.0",
+    "ts-node": "^10.9.1"
   }
 }

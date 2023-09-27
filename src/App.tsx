@@ -9,7 +9,10 @@ import {
   Container,
   FormControlLabel,
   FormGroup,
+  MenuItem,
   Paper,
+  Select,
+  SelectChangeEvent,
   Stack,
   Table,
   TableBody,
@@ -81,8 +84,9 @@ function App() {
   const [partyName, setPartyName] = useState("みのもんたのあさずばっ");
   const [useOnlyPrefix, setUseOnlyPrefix] = useState(true);
   const [numPokemonStr, setNumPokemonStr] = useState("6");
-  const [generationIds, setGenerations] = useState(new Set([1, 2, 3, 4, 5, 6]));
+  const [pokemonPool, setPokemonPool] = useState("pokemons_gen6");
   const [allowLegendary, setAllowLegendary] = useState(false);
+  const [allowMythical, setAllowMythical] = useState(false);
 
   const numPokemon = parseInt(numPokemonStr);
   const [parties, setParties] = useState<Array<Party>>(
@@ -90,28 +94,9 @@ function App() {
       numPokemon,
       useOnlyPrefix,
       allowLegendary,
-      generationIds,
+      allowMythical,
+      pokemonPool: pokemonPool as any,
     })
-  );
-
-  const GenerationSelector = ({ generation }: { generation: number }) => (
-    <FormControlLabel
-      control={
-        <Checkbox
-          checked={generationIds.has(generation)}
-          onChange={(e) => {
-            const gen = new Set(generationIds);
-            if (e.target.checked) {
-              gen.add(generation);
-            } else {
-              gen.delete(generation);
-            }
-            setGenerations(gen);
-          }}
-        />
-      }
-      label={"第" + generation + "世代"}
-    />
   );
 
   return (
@@ -125,12 +110,19 @@ function App() {
             onChange={(e) => setPartyName(e.target.value)}
           />
           <FormGroup row sx={{ alignItems: "center", gap: 1 }}>
-            <Box sx={{ pr: 1 }}>使用ポケモン:</Box>
-            {Array.from({ length: 9 }, (_, k) => k + 1).map((k) => (
-              <GenerationSelector generation={k} />
-            ))}
-          </FormGroup>
-          <FormGroup row sx={{ alignItems: "center", gap: 1 }}>
+            <Box>使用ポケモン</Box>
+            <Select
+              value={pokemonPool}
+              label="使用ポケモン"
+              onChange={(e: SelectChangeEvent) => {
+                setPokemonPool(e.target.value);
+              }}
+            >
+              <MenuItem value={"pokemons_gen6"}>XY/ORAS</MenuItem>
+              <MenuItem value={"pokemons_gen7"}>SM/USUM</MenuItem>
+              <MenuItem value={"pokemons_gen8"}>SwSh</MenuItem>
+              <MenuItem value={"pokemons_gen9"}>SV</MenuItem>
+            </Select>
             <FormControlLabel
               control={
                 <Checkbox
@@ -138,7 +130,16 @@ function App() {
                   onChange={(e) => setAllowLegendary(e.target.checked)}
                 />
               }
-              label="伝説・幻のポケモンあり"
+              label="伝説あり"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={allowMythical}
+                  onChange={(e) => setAllowMythical(e.target.checked)}
+                />
+              }
+              label="幻あり"
             />
             <FormControlLabel
               control={
@@ -147,7 +148,7 @@ function App() {
                   onChange={(e) => setUseOnlyPrefix(e.target.checked)}
                 />
               }
-              label="接頭辞のみを使う"
+              label="接頭辞のみ"
             />
             <TextField
               label="ポケモンの数"
@@ -173,7 +174,8 @@ function App() {
                   numPokemon,
                   useOnlyPrefix,
                   allowLegendary,
-                  generationIds,
+                  allowMythical,
+                  pokemonPool: pokemonPool as any,
                 })
               );
             }}

@@ -6,7 +6,8 @@ it("Generates party end-to-end", () => {
       useOnlyPrefix: true,
       numPokemon: 6,
       allowLegendary: true,
-      generationIds: new Set([1, 2, 3, 4, 5, 6]),
+      allowMythical: true,
+      pokemonPool: "pokemons_gen6",
     })
   ).not.toEqual([]);
   expect(
@@ -14,7 +15,8 @@ it("Generates party end-to-end", () => {
       useOnlyPrefix: false,
       numPokemon: 6,
       allowLegendary: true,
-      generationIds: new Set([1, 2, 3, 4, 5, 6]),
+      allowMythical: true,
+      pokemonPool: "pokemons_gen6",
     })
   ).not.toEqual([]);
 });

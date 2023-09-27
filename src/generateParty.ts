@@ -6,15 +6,19 @@ interface Config {
   numPokemon: number;
   useOnlyPrefix: boolean;
   allowLegendary: boolean;
-  generationIds: Set<number>;
+  allowMythical: boolean;
+  pokemonPool:
+    | "pokemons_gen6"
+    | "pokemons_gen7"
+    | "pokemons_gen8"
+    | "pokemons_gen9";
 }
 
 interface Pokemon {
   id: number;
   is_mythical: boolean;
   is_legendary: boolean;
-  generation_id: number;
-  pokemon_v2_pokemonspeciesnames: Array<{ name: string }>;
+  name_ja: string;
 }
 
 export type Party = Array<[string, Array<string>]>;
@@ -43,17 +47,14 @@ export function createVocab(
   }
 
   for (const pokemon of pokemons) {
-    if (!config.generationIds.has(pokemon.generation_id)) {
-      continue;
-    }
     if (
-      !config.allowLegendary &&
-      (pokemon.is_legendary || pokemon.is_mythical)
+      (!config.allowLegendary && pokemon.is_legendary) ||
+      (!config.allowMythical && pokemon.is_mythical)
     ) {
       continue;
     }
 
-    const pokeName = pokemon.pokemon_v2_pokemonspeciesnames[0].name;
+    const pokeName = pokemon.name_ja;
 
     for (let j = 1; j <= pokeName.length; j++) {
       addPokemon(pokeName.slice(0, j), pokeName);
@@ -73,7 +74,7 @@ export function createVocab(
 
 export function generateParty(input: string, config: Config): Array<Party> {
   input = toKatakana(input);
-  const vocab = createVocab(pokemon_json.data.pokemon, config);
+  const vocab = createVocab(pokemon_json[config.pokemonPool] ?? [], config);
   const splits = splitInput(input, config.numPokemon, new Set(vocab.keys()));
   return splits.map((split) => split.map((x) => [x, vocab.get(x) ?? []]));
 }
