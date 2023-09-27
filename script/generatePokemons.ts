@@ -56,63 +56,6 @@ fragment pokemon_fragment on pokemon_v2_pokemondexnumber {
 }
 `;
 
-const reg_d_additional: Pokemon[] = [
-  {
-    id: 1009,
-    is_mythical: false,
-    is_legendary: false,
-    name_ja: "ウネルミナモ",
-  },
-  {
-    id: 1010,
-    is_mythical: false,
-    is_legendary: false,
-    name_ja: "テツノイサハ",
-  },
-  {
-    id: 1011,
-    is_mythical: false,
-    is_legendary: false,
-    name_ja: "カミッチュ",
-  },
-  {
-    id: 1012,
-    is_mythical: false,
-    is_legendary: false,
-    name_ja: "チャデス",
-  },
-  {
-    id: 1013,
-    is_mythical: false,
-    is_legendary: false,
-    name_ja: "ヤバソチャ",
-  },
-  {
-    id: 1014,
-    is_mythical: false,
-    is_legendary: false,
-    name_ja: "イイネイヌ",
-  },
-  {
-    id: 1015,
-    is_mythical: false,
-    is_legendary: false,
-    name_ja: "マシマシラ",
-  },
-  {
-    id: 1016,
-    is_mythical: false,
-    is_legendary: false,
-    name_ja: "キチキギス",
-  },
-  {
-    id: 1017,
-    is_mythical: false,
-    is_legendary: false,
-    name_ja: "オーガポン",
-  },
-];
-
 function transform(entry: PokemonResponse): Pokemon {
   const { id, is_mythical, is_legendary } = entry.pokemon_v2_pokemonspecy;
   const name_ja =
@@ -137,7 +80,7 @@ async function main(): Promise<void> {
     pokemons_gen6: data.pokemons_gen6.map(transform),
     pokemons_gen7: data.pokemons_gen7.map(transform),
     pokemons_gen8: data.pokemons_gen8.map(transform),
-    pokemons_gen9: [...data.pokemons_gen9.map(transform), ...reg_d_additional],
+    pokemons_gen9: data.pokemons_gen9.map(transform),
   };
 
   console.log(JSON.stringify(output, null, 2));

@@ -110,18 +110,19 @@ function App() {
             onChange={(e) => setPartyName(e.target.value)}
           />
           <FormGroup row sx={{ alignItems: "center", gap: 1 }}>
+            {/* TODO: Make this non ad-hoc */}
             <Box>使用ポケモン</Box>
             <Select
               value={pokemonPool}
-              label="使用ポケモン"
               onChange={(e: SelectChangeEvent) => {
                 setPokemonPool(e.target.value);
               }}
+              sx={{ m: 1, minWidth: 180 }}
             >
               <MenuItem value={"pokemons_gen6"}>XY/ORAS</MenuItem>
               <MenuItem value={"pokemons_gen7"}>SM/USUM</MenuItem>
               <MenuItem value={"pokemons_gen8"}>SwSh</MenuItem>
-              <MenuItem value={"pokemons_gen9"}>SV</MenuItem>
+              <MenuItem value={"pokemons_gen9"}>SV (一部未対応)</MenuItem>
             </Select>
             <FormControlLabel
               control={

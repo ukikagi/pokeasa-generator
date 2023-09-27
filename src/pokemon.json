@@ -15077,60 +15077,6 @@
       "is_mythical": false,
       "is_legendary": true,
       "name_ja": "ミライドン"
-    },
-    {
-      "id": 1009,
-      "is_mythical": false,
-      "is_legendary": false,
-      "name_ja": "ウネルミナモ"
-    },
-    {
-      "id": 1010,
-      "is_mythical": false,
-      "is_legendary": false,
-      "name_ja": "テツノイサハ"
-    },
-    {
-      "id": 1011,
-      "is_mythical": false,
-      "is_legendary": false,
-      "name_ja": "カミッチュ"
-    },
-    {
-      "id": 1012,
-      "is_mythical": false,
-      "is_legendary": false,
-      "name_ja": "チャデス"
-    },
-    {
-      "id": 1013,
-      "is_mythical": false,
-      "is_legendary": false,
-      "name_ja": "ヤバソチャ"
-    },
-    {
-      "id": 1014,
-      "is_mythical": false,
-      "is_legendary": false,
-      "name_ja": "イイネイヌ"
-    },
-    {
-      "id": 1015,
-      "is_mythical": false,
-      "is_legendary": false,
-      "name_ja": "マシマシラ"
-    },
-    {
-      "id": 1016,
-      "is_mythical": false,
-      "is_legendary": false,
-      "name_ja": "キチキギス"
-    },
-    {
-      "id": 1017,
-      "is_mythical": false,
-      "is_legendary": false,
-      "name_ja": "オーガポン"
     }
   ]
 }
