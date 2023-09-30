@@ -1,6 +1,7 @@
+import { expect, test } from 'vitest'
 import { splitInput } from "./algorithm";
 
-it("Splits input into token sequences", () => {
+test("Splits input into token sequences", () => {
   expect(
     splitInput("あいうえお", 3, new Set(["あいう", "うえお", "あ", "い"]))
   ).toEqual([["あ", "い", "うえお"]]);

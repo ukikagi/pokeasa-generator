@@ -1,6 +1,7 @@
+import { expect, test } from 'vitest'
 import { generateParty } from "./generateParty";
 
-it("Generates party end-to-end", () => {
+test("Generates party end-to-end", () => {
   expect(
     generateParty("ミノモンタノアサズバッ", {
       useOnlyPrefix: true,
