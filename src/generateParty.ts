@@ -23,7 +23,7 @@ interface Pokemon {
 
 export type Party = Array<[string, Array<string>]>;
 
-export function shouldExclude(slice: string): boolean {
+export function shouldExclude(_slice: string): boolean {
   return false;
 }
 
