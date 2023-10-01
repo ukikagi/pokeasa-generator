@@ -15,6 +15,27 @@ import {
   TextField,
 } from "@mui/material";
 import { PartyTables } from "./PartyTables";
+import Markdown from "react-markdown";
+
+const README = `
+# 朝ズバ系構築ジェネレーター
+
+## これはなに？
+- 👉 [けだまメモchウィキ > 用語集 > 朝ズバッ！](https://wikiwiki.jp/kedamamemo/%E7%94%A8%E8%AA%9E%E9%9B%86#ua07c323)
+- ポケモン名の一部を繋げて語呂合わせをする、通称「朝ズバ系構築」を生成するツールです
+
+## 使い方
+- 語呂合わせにしたいフレーズを入力して「生成」を押すと、フレーズの分割と対応するポケモンの例が表示されます
+- 接頭辞のみ：ポケモン名の一部を取るときに、頭の部分だけを使用します。
+  - 例：フシギダネ → フシギ はOK、フシギダネ → ダネ はNG
+
+## 既知の問題
+- SVはPokémon HOME連携および碧の仮面で追加されたポケモン未対応です
+- 入力によってはパーティ案の個数が膨大になりブラウザーが固まることがあります
+  - 例：パーティー名 = "ぎぎぎぎぎぎぎぎぎぎぎぎ" など
+- 重複チェックをしていないため、同一ポケモンを複数匹採用しないと組めない構築が生成されることがあります
+
+`;
 
 function isValidNumPokemon(s: string): boolean {
   const n = parseInt(s, 10);
@@ -126,6 +147,7 @@ function App() {
           </Button>
         </Stack>
         <PartyTables parties={parties} />
+        <Markdown className="ReadMe">{README}</Markdown>
       </Stack>
     </Container>
   );
