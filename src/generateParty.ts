@@ -1,5 +1,5 @@
 import pokemon_json from "./pokemon.json";
-import { splitInput } from "./algorithm";
+import { tokenize } from "./algorithm";
 import { toKatakana } from "wanakana";
 
 interface Config {
@@ -75,6 +75,6 @@ export function createVocab(
 export function generateParty(input: string, config: Config): Array<Party> {
   input = toKatakana(input);
   const vocab = createVocab(pokemon_json[config.pokemonPool] ?? [], config);
-  const splits = splitInput(input, config.numPokemon, new Set(vocab.keys()));
+  const splits = tokenize(input, config.numPokemon, new Set(vocab.keys()));
   return splits.map((split) => split.map((x) => [x, vocab.get(x) ?? []]));
 }
