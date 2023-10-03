@@ -18,7 +18,7 @@ test("Splits input into token sequences", () => {
 });
 
 test("selectDistinct", () => {
-  function check_solvable(n: number, m: number, arrs: Array<Array<number>>) {
+  function check_solvable(arrs: Array<Array<number>>) {
     expect(selectDistinct(arrs)).toSatisfy((res: Array<number>) => {
       return (
         res !== null &&
@@ -28,28 +28,28 @@ test("selectDistinct", () => {
     });
   }
 
-  function check_unsolvable(n: number, m: number, arrs: Array<Array<number>>) {
+  function check_unsolvable(arrs: Array<Array<number>>) {
     expect(selectDistinct(arrs)).toBeNull();
   }
 
-  check_solvable(1, 1, [[0]]);
-  check_solvable(2, 2, [
+  check_solvable([[0]]);
+  check_solvable([
     [0, 1],
     [0, 1],
   ]);
-  check_solvable(3, 3, [
+  check_solvable([
     [0, 1],
     [1, 2],
     [0, 2],
   ]);
 
-  check_unsolvable(2, 1, [[0], [0]]);
-  check_unsolvable(3, 2, [
+  check_unsolvable([[0], [0]]);
+  check_unsolvable([
     [0, 1],
     [0, 1],
     [0, 1],
   ]);
-  check_unsolvable(4, 3, [
+  check_unsolvable([
     [0, 1],
     [1, 2],
     [0, 2],

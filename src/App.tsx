@@ -33,8 +33,6 @@ const README = `
 - SVはPokémon HOME連携および碧の仮面で追加されたポケモン未対応です
 - 入力によってはパーティ案の個数が膨大になりブラウザーが固まることがあります
   - 例：パーティー名 = "ぎぎぎぎぎぎぎぎぎぎぎぎ" など
-- 重複チェックをしていないため、同一ポケモンを複数匹採用しないと組めない構築が生成されることがあります
-
 `;
 
 function isValidNumPokemon(s: string): boolean {
@@ -49,17 +47,19 @@ function App() {
   const [pokemonPool, setPokemonPool] = useState("pokemons_gen6");
   const [allowLegendary, setAllowLegendary] = useState(false);
   const [allowMythical, setAllowMythical] = useState(false);
-
+  const [allowDuplicate, setAllowDuplicate] = useState(false);
   const numPokemon = parseInt(numPokemonStr);
-  const [parties, setParties] = useState<Array<Party>>(
+
+  const genParties = () =>
     generateParty(partyName, {
       numPokemon,
       useOnlyPrefix,
       allowLegendary,
       allowMythical,
       pokemonPool: pokemonPool as any,
-    })
-  );
+      allowDuplicate,
+    });
+  const [parties, setParties] = useState<Array<Party>>(genParties());
 
   return (
     <Container className="App" sx={{ margin: 3 }}>
@@ -113,6 +113,15 @@ function App() {
               }
               label="接頭辞のみ"
             />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={allowDuplicate}
+                  onChange={(e) => setAllowDuplicate(e.target.checked)}
+                />
+              }
+              label="重複あり"
+            />
             <TextField
               label="ポケモンの数"
               variant="outlined"
@@ -132,15 +141,7 @@ function App() {
               if (!isValidNumPokemon(numPokemonStr)) {
                 return;
               }
-              setParties(
-                generateParty(partyName, {
-                  numPokemon,
-                  useOnlyPrefix,
-                  allowLegendary,
-                  allowMythical,
-                  pokemonPool: pokemonPool as any,
-                })
-              );
+              setParties(genParties());
             }}
           >
             生成

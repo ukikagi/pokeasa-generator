@@ -1,5 +1,5 @@
 import pokemon_json from "./pokemon.json";
-import { tokenize } from "./algorithm";
+import { selectDistinct, tokenize } from "./algorithm";
 import { toKatakana } from "wanakana";
 
 interface Config {
@@ -12,6 +12,7 @@ interface Config {
     | "pokemons_gen7"
     | "pokemons_gen8"
     | "pokemons_gen9";
+  allowDuplicate: boolean;
 }
 
 interface Pokemon {
@@ -76,5 +77,14 @@ export function generateParty(input: string, config: Config): Array<Party> {
   input = toKatakana(input);
   const vocab = createVocab(pokemon_json[config.pokemonPool] ?? [], config);
   const splits = tokenize(input, config.numPokemon, new Set(vocab.keys()));
-  return splits.map((split) => split.map((x) => [x, vocab.get(x) ?? []]));
+
+  let parties: Array<Party> = splits.map((split) =>
+    split.map((x) => [x, vocab.get(x) ?? []])
+  );
+  if (!config.allowDuplicate) {
+    parties = parties.filter(
+      (party) => selectDistinct(party.map((span) => span[1])) !== null
+    );
+  }
+  return parties;
 }
