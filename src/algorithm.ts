@@ -44,9 +44,9 @@ export function tokenize(
   return reconstruct(length, numToken);
 }
 
-class bipmatch {
+class Bipmatch {
   readonly size: number;
-  edges: Array<Array<number>>;
+  readonly edges: Array<Array<number>>;
 
   constructor(size: number) {
     this.size = size;
@@ -89,21 +89,53 @@ class bipmatch {
   }
 }
 
-export function selectDistinct(
-  n: number,
-  m: number,
-  arrs: Array<Array<number>>
-): Array<number> | null {
-  const bip = new bipmatch(n + m);
+class IdMapper<T> {
+  #from_id: Array<T>;
+  #to_id: Map<T, number>;
+
+  constructor() {
+    this.#from_id = [];
+    this.#to_id = new Map<T, number>();
+  }
+
+  id(x: T): number {
+    if (!this.#to_id.has(x)) {
+      this.#to_id.set(x, this.#from_id.length);
+      this.#from_id.push(x);
+    }
+    return this.#to_id.get(x)!;
+  }
+
+  get(id: number): T {
+    return this.#from_id[id];
+  }
+
+  size(): number {
+    return this.#from_id.length;
+  }
+}
+
+export function selectDistinct<T>(arrs: Array<Array<T>>): Array<T> | null {
+  const mapper = new IdMapper<T>();
+  for (const arr of arrs) {
+    for (const x of arr) {
+      mapper.id(x);
+    }
+  }
+
+  const n = arrs.length;
+  const m = mapper.size();
+
+  const bip = new Bipmatch(n + m);
   for (let i = 0; i < n; i++) {
-    for (const j of arrs[i]) {
-      bip.addEdge(i, n + j);
+    for (const x of arrs[i]) {
+      bip.addEdge(i, n + mapper.id(x));
     }
   }
   const [count, match] = bip.count_match();
   if (count < n) {
     return null;
   } else {
-    return match.slice(0, n).map((x) => x - n);
+    return match.slice(0, n).map((i) => mapper.get(i - n));
   }
 }
