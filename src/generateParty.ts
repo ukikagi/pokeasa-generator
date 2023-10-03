@@ -82,9 +82,19 @@ export function generateParty(input: string, config: Config): Array<Party> {
     split.map((x) => [x, vocab.get(x) ?? []])
   );
   if (!config.allowDuplicate) {
-    parties = parties.filter(
-      (party) => selectDistinct(party.map((span) => span[1])) !== null
-    );
+    parties = parties.flatMap((party) => {
+      const choice = selectDistinct(party.map((span) => span[1]));
+      if (choice === null) {
+        return [];
+      }
+      for (let i = 0; i < party.length; i++) {
+        party[i][1] = [
+          choice[i],
+          ...party[i][1].filter((x) => x !== choice[i]),
+        ];
+      }
+      return [party];
+    });
   }
   return parties;
 }
