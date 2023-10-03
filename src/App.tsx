@@ -28,15 +28,21 @@ const README = `
 ## 使い方
 
 - 語呂合わせにしたいフレーズを入力して「生成」を押すと、フレーズの分割と対応するポケモンの例が表示されます
-- 接頭辞のみ：ポケモン名の一部を取るときに、頭の部分だけを使用します。
+- 接頭辞のみ：ポケモン名の一部を取るときに、頭の部分だけを使用します
   - 例：フシギダネ → フシギ は OK、フシギダネ → ダネ は NG
-- 重複あり：同名のポケモンを複数匹採用することを許可します
+- 重複あり：同名のポケモンを複数匹採用することを許します
 
 ## 既知の問題
 
-- SV は Pokémon HOME 連携および碧の仮面で追加されたポケモン未対応です
 - 入力によってはパーティ案の個数が膨大になりブラウザーが固まることがあります
   - 例：パーティー名 = "ぎぎぎぎぎぎぎぎぎぎぎぎ" など
+
+## 更新履歴
+
+- 2023-10-04
+  - ポケモンの重複チェックを実装
+  - SVのポケモンを更新（碧の仮面まで）
+  - 準伝説ポケモンが誤って伝説に分類されていたバグを修正
 
 ## ソースコード
 
@@ -87,12 +93,12 @@ function App() {
               onChange={(e: SelectChangeEvent) => {
                 setPokemonPool(e.target.value);
               }}
-              sx={{ m: 1, minWidth: 180 }}
+              sx={{ m: 1, minWidth: 130 }}
             >
               <MenuItem value={"pokemons_gen6"}>XY/ORAS</MenuItem>
               <MenuItem value={"pokemons_gen7"}>SM/USUM</MenuItem>
               <MenuItem value={"pokemons_gen8"}>SwSh</MenuItem>
-              <MenuItem value={"pokemons_gen9"}>SV (一部未対応)</MenuItem>
+              <MenuItem value={"pokemons_gen9"}>SV</MenuItem>
             </Select>
             <FormControlLabel
               control={

@@ -861,19 +861,19 @@
     {
       "id": 144,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "フリーザー"
     },
     {
       "id": 145,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "サンダー"
     },
     {
       "id": 146,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "ファイヤー"
     },
     {
@@ -1396,7 +1396,7 @@
       "id": 233,
       "is_mythical": false,
       "is_legendary": false,
-      "name_ja": "ポリゴン２"
+      "name_ja": "ポリゴン2"
     },
     {
       "id": 234,
@@ -1455,19 +1455,19 @@
     {
       "id": 243,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "ライコウ"
     },
     {
       "id": 244,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "エンテイ"
     },
     {
       "id": 245,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "スイクン"
     },
     {
@@ -2259,31 +2259,31 @@
     {
       "id": 377,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "レジロック"
     },
     {
       "id": 378,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "レジアイス"
     },
     {
       "id": 379,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "レジスチル"
     },
     {
       "id": 380,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "ラティアス"
     },
     {
       "id": 381,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "ラティオス"
     },
     {
@@ -2842,7 +2842,7 @@
       "id": 474,
       "is_mythical": false,
       "is_legendary": false,
-      "name_ja": "ポリゴンＺ"
+      "name_ja": "ポリゴンZ"
     },
     {
       "id": 475,
@@ -2877,19 +2877,19 @@
     {
       "id": 480,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "ユクシー"
     },
     {
       "id": 481,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "エムリット"
     },
     {
       "id": 482,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "アグノム"
     },
     {
@@ -2907,13 +2907,13 @@
     {
       "id": 485,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "ヒードラン"
     },
     {
       "id": 486,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "レジギガス"
     },
     {
@@ -2925,7 +2925,7 @@
     {
       "id": 488,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "クレセリア"
     },
     {
@@ -3825,31 +3825,31 @@
     {
       "id": 638,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "コバルオン"
     },
     {
       "id": 639,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "テラキオン"
     },
     {
       "id": 640,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "ビリジオン"
     },
     {
       "id": 641,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "トルネロス"
     },
     {
       "id": 642,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "ボルトロス"
     },
     {
@@ -3867,7 +3867,7 @@
     {
       "id": 645,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "ランドロス"
     },
     {
@@ -5189,19 +5189,19 @@
     {
       "id": 144,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "フリーザー"
     },
     {
       "id": 145,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "サンダー"
     },
     {
       "id": 146,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "ファイヤー"
     },
     {
@@ -5724,7 +5724,7 @@
       "id": 233,
       "is_mythical": false,
       "is_legendary": false,
-      "name_ja": "ポリゴン２"
+      "name_ja": "ポリゴン2"
     },
     {
       "id": 234,
@@ -5783,19 +5783,19 @@
     {
       "id": 243,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "ライコウ"
     },
     {
       "id": 244,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "エンテイ"
     },
     {
       "id": 245,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "スイクン"
     },
     {
@@ -6587,31 +6587,31 @@
     {
       "id": 377,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "レジロック"
     },
     {
       "id": 378,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "レジアイス"
     },
     {
       "id": 379,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "レジスチル"
     },
     {
       "id": 380,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "ラティアス"
     },
     {
       "id": 381,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "ラティオス"
     },
     {
@@ -7170,7 +7170,7 @@
       "id": 474,
       "is_mythical": false,
       "is_legendary": false,
-      "name_ja": "ポリゴンＺ"
+      "name_ja": "ポリゴンZ"
     },
     {
       "id": 475,
@@ -7205,19 +7205,19 @@
     {
       "id": 480,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "ユクシー"
     },
     {
       "id": 481,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "エムリット"
     },
     {
       "id": 482,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "アグノム"
     },
     {
@@ -7235,13 +7235,13 @@
     {
       "id": 485,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "ヒードラン"
     },
     {
       "id": 486,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "レジギガス"
     },
     {
@@ -7253,7 +7253,7 @@
     {
       "id": 488,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "クレセリア"
     },
     {
@@ -8153,31 +8153,31 @@
     {
       "id": 638,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "コバルオン"
     },
     {
       "id": 639,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "テラキオン"
     },
     {
       "id": 640,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "ビリジオン"
     },
     {
       "id": 641,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "トルネロス"
     },
     {
       "id": 642,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "ボルトロス"
     },
     {
@@ -8195,7 +8195,7 @@
     {
       "id": 645,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "ランドロス"
     },
     {
@@ -8958,12 +8958,12 @@
       "id": 772,
       "is_mythical": false,
       "is_legendary": false,
-      "name_ja": "タイプ：ヌル"
+      "name_ja": "タイプ:ヌル"
     },
     {
       "id": 773,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "シルヴァディ"
     },
     {
@@ -9035,25 +9035,25 @@
     {
       "id": 785,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "カプ・コケコ"
     },
     {
       "id": 786,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "カプ・テテフ"
     },
     {
       "id": 787,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "カプ・ブルル"
     },
     {
       "id": 788,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "カプ・レヒレ"
     },
     {
@@ -9829,19 +9829,19 @@
     {
       "id": 144,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "フリーザー"
     },
     {
       "id": 145,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "サンダー"
     },
     {
       "id": 146,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "ファイヤー"
     },
     {
@@ -9861,6 +9861,18 @@
       "is_mythical": false,
       "is_legendary": false,
       "name_ja": "カイリュー"
+    },
+    {
+      "id": 150,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "ミュウツー"
+    },
+    {
+      "id": 151,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "ミュウ"
     },
     {
       "id": 163,
@@ -10100,7 +10112,7 @@
       "id": 233,
       "is_mythical": false,
       "is_legendary": false,
-      "name_ja": "ポリゴン２"
+      "name_ja": "ポリゴン2"
     },
     {
       "id": 236,
@@ -10145,6 +10157,24 @@
       "name_ja": "ハピナス"
     },
     {
+      "id": 243,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ライコウ"
+    },
+    {
+      "id": 244,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "エンテイ"
+    },
+    {
+      "id": 245,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "スイクン"
+    },
+    {
       "id": 246,
       "is_mythical": false,
       "is_legendary": false,
@@ -10161,6 +10191,78 @@
       "is_mythical": false,
       "is_legendary": false,
       "name_ja": "バンギラス"
+    },
+    {
+      "id": 249,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "ルギア"
+    },
+    {
+      "id": 250,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "ホウオウ"
+    },
+    {
+      "id": 251,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "セレビィ"
+    },
+    {
+      "id": 252,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "キモリ"
+    },
+    {
+      "id": 253,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ジュプトル"
+    },
+    {
+      "id": 254,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ジュカイン"
+    },
+    {
+      "id": 255,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "アチャモ"
+    },
+    {
+      "id": 256,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ワカシャモ"
+    },
+    {
+      "id": 257,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "バシャーモ"
+    },
+    {
+      "id": 258,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ミズゴロウ"
+    },
+    {
+      "id": 259,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ヌマクロー"
+    },
+    {
+      "id": 260,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ラグラージ"
     },
     {
       "id": 263,
@@ -10573,20 +10675,56 @@
     {
       "id": 377,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "レジロック"
     },
     {
       "id": 378,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "レジアイス"
     },
     {
       "id": 379,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "レジスチル"
+    },
+    {
+      "id": 380,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ラティアス"
+    },
+    {
+      "id": 381,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ラティオス"
+    },
+    {
+      "id": 382,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "カイオーガ"
+    },
+    {
+      "id": 383,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "グラードン"
+    },
+    {
+      "id": 384,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "レックウザ"
+    },
+    {
+      "id": 385,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "ジラーチ"
     },
     {
       "id": 403,
@@ -10886,7 +11024,7 @@
       "id": 474,
       "is_mythical": false,
       "is_legendary": false,
-      "name_ja": "ポリゴンＺ"
+      "name_ja": "ポリゴンZ"
     },
     {
       "id": 475,
@@ -10911,6 +11049,66 @@
       "is_mythical": false,
       "is_legendary": false,
       "name_ja": "ロトム"
+    },
+    {
+      "id": 480,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ユクシー"
+    },
+    {
+      "id": 481,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "エムリット"
+    },
+    {
+      "id": 482,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "アグノム"
+    },
+    {
+      "id": 483,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "ディアルガ"
+    },
+    {
+      "id": 484,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "パルキア"
+    },
+    {
+      "id": 485,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ヒードラン"
+    },
+    {
+      "id": 486,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "レジギガス"
+    },
+    {
+      "id": 487,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "ギラティナ"
+    },
+    {
+      "id": 488,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "クレセリア"
+    },
+    {
+      "id": 494,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "ビクティニ"
     },
     {
       "id": 506,
@@ -11593,20 +11791,68 @@
     {
       "id": 638,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "コバルオン"
     },
     {
       "id": 639,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "テラキオン"
     },
     {
       "id": 640,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "ビリジオン"
+    },
+    {
+      "id": 641,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "トルネロス"
+    },
+    {
+      "id": 642,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ボルトロス"
+    },
+    {
+      "id": 643,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "レシラム"
+    },
+    {
+      "id": 644,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "ゼクロム"
+    },
+    {
+      "id": 645,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ランドロス"
+    },
+    {
+      "id": 646,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "キュレム"
+    },
+    {
+      "id": 647,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "ケルディオ"
+    },
+    {
+      "id": 649,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "ゲノセクト"
     },
     {
       "id": 659,
@@ -11885,6 +12131,90 @@
       "name_ja": "オンバーン"
     },
     {
+      "id": 716,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "ゼルネアス"
+    },
+    {
+      "id": 717,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "イベルタル"
+    },
+    {
+      "id": 718,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "ジガルデ"
+    },
+    {
+      "id": 719,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "ディアンシー"
+    },
+    {
+      "id": 721,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "ボルケニオン"
+    },
+    {
+      "id": 722,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "モクロー"
+    },
+    {
+      "id": 723,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "フクスロー"
+    },
+    {
+      "id": 724,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ジュナイパー"
+    },
+    {
+      "id": 725,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ニャビー"
+    },
+    {
+      "id": 726,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ニャヒート"
+    },
+    {
+      "id": 727,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ガオガエン"
+    },
+    {
+      "id": 728,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "アシマリ"
+    },
+    {
+      "id": 729,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "オシャマリ"
+    },
+    {
+      "id": 730,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "アシレーヌ"
+    },
+    {
       "id": 736,
       "is_mythical": false,
       "is_legendary": false,
@@ -12086,12 +12416,12 @@
       "id": 772,
       "is_mythical": false,
       "is_legendary": false,
-      "name_ja": "タイプ：ヌル"
+      "name_ja": "タイプ:ヌル"
     },
     {
       "id": 773,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "シルヴァディ"
     },
     {
@@ -12141,6 +12471,156 @@
       "is_mythical": false,
       "is_legendary": false,
       "name_ja": "ジャラランガ"
+    },
+    {
+      "id": 785,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "カプ・コケコ"
+    },
+    {
+      "id": 786,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "カプ・テテフ"
+    },
+    {
+      "id": 787,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "カプ・ブルル"
+    },
+    {
+      "id": 788,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "カプ・レヒレ"
+    },
+    {
+      "id": 789,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "コスモッグ"
+    },
+    {
+      "id": 790,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "コスモウム"
+    },
+    {
+      "id": 791,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "ソルガレオ"
+    },
+    {
+      "id": 792,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "ルナアーラ"
+    },
+    {
+      "id": 793,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ウツロイド"
+    },
+    {
+      "id": 794,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "マッシブーン"
+    },
+    {
+      "id": 795,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "フェローチェ"
+    },
+    {
+      "id": 796,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "デンジュモク"
+    },
+    {
+      "id": 797,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "テッカグヤ"
+    },
+    {
+      "id": 798,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "カミツルギ"
+    },
+    {
+      "id": 799,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "アクジキング"
+    },
+    {
+      "id": 800,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "ネクロズマ"
+    },
+    {
+      "id": 801,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "マギアナ"
+    },
+    {
+      "id": 802,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "マーシャドー"
+    },
+    {
+      "id": 803,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ベベノム"
+    },
+    {
+      "id": 804,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "アーゴヨン"
+    },
+    {
+      "id": 805,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ツンデツンデ"
+    },
+    {
+      "id": 806,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ズガドーン"
+    },
+    {
+      "id": 807,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "ゼラオラ"
+    },
+    {
+      "id": 808,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "メルタン"
+    },
+    {
+      "id": 809,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "メルメタル"
     },
     {
       "id": 810,
@@ -12631,13 +13111,13 @@
     {
       "id": 891,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "ダクマ"
     },
     {
       "id": 892,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "ウーラオス"
     },
     {
@@ -12649,25 +13129,25 @@
     {
       "id": 894,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "レジエレキ"
     },
     {
       "id": 895,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "レジドラゴ"
     },
     {
       "id": 896,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "ブリザポス"
     },
     {
       "id": 897,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "レイスポス"
     },
     {
@@ -12679,6 +13159,36 @@
   ],
   "pokemons_gen9": [
     {
+      "id": 4,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ヒトカゲ"
+    },
+    {
+      "id": 5,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "リザード"
+    },
+    {
+      "id": 6,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "リザードン"
+    },
+    {
+      "id": 23,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "アーボ"
+    },
+    {
+      "id": 24,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "アーボック"
+    },
+    {
       "id": 25,
       "is_mythical": false,
       "is_legendary": false,
@@ -12689,6 +13199,42 @@
       "is_mythical": false,
       "is_legendary": false,
       "name_ja": "ライチュウ"
+    },
+    {
+      "id": 27,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "サンド"
+    },
+    {
+      "id": 28,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "サンドパン"
+    },
+    {
+      "id": 35,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ピッピ"
+    },
+    {
+      "id": 36,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ピクシー"
+    },
+    {
+      "id": 37,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ロコン"
+    },
+    {
+      "id": 38,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "キュウコン"
     },
     {
       "id": 39,
@@ -12773,6 +13319,60 @@
       "is_mythical": false,
       "is_legendary": false,
       "name_ja": "ウインディ"
+    },
+    {
+      "id": 60,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ニョロモ"
+    },
+    {
+      "id": 61,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ニョロゾ"
+    },
+    {
+      "id": 62,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ニョロボン"
+    },
+    {
+      "id": 69,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "マダツボミ"
+    },
+    {
+      "id": 70,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ウツドン"
+    },
+    {
+      "id": 71,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ウツボット"
+    },
+    {
+      "id": 74,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "イシツブテ"
+    },
+    {
+      "id": 75,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ゴローン"
+    },
+    {
+      "id": 76,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ゴローニャ"
     },
     {
       "id": 79,
@@ -12865,6 +13465,18 @@
       "name_ja": "マルマイン"
     },
     {
+      "id": 109,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ドガース"
+    },
+    {
+      "id": 110,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "マタドガス"
+    },
+    {
       "id": 113,
       "is_mythical": false,
       "is_legendary": false,
@@ -12925,6 +13537,30 @@
       "name_ja": "ブースター"
     },
     {
+      "id": 143,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "カビゴン"
+    },
+    {
+      "id": 144,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "フリーザー"
+    },
+    {
+      "id": 145,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "サンダー"
+    },
+    {
+      "id": 146,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ファイヤー"
+    },
+    {
       "id": 147,
       "is_mythical": false,
       "is_legendary": false,
@@ -12943,10 +13579,82 @@
       "name_ja": "カイリュー"
     },
     {
+      "id": 150,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "ミュウツー"
+    },
+    {
+      "id": 151,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "ミュウ"
+    },
+    {
+      "id": 155,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ヒノアラシ"
+    },
+    {
+      "id": 156,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "マグマラシ"
+    },
+    {
+      "id": 157,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "バクフーン"
+    },
+    {
+      "id": 161,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "オタチ"
+    },
+    {
+      "id": 162,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "オオタチ"
+    },
+    {
+      "id": 163,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ホーホー"
+    },
+    {
+      "id": 164,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ヨルノズク"
+    },
+    {
+      "id": 167,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "イトマル"
+    },
+    {
+      "id": 168,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "アリアドス"
+    },
+    {
       "id": 172,
       "is_mythical": false,
       "is_legendary": false,
       "name_ja": "ピチュー"
+    },
+    {
+      "id": 173,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ピィ"
     },
     {
       "id": 174,
@@ -12991,6 +13699,12 @@
       "name_ja": "ウソッキー"
     },
     {
+      "id": 186,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ニョロトノ"
+    },
+    {
       "id": 187,
       "is_mythical": false,
       "is_legendary": false,
@@ -13009,6 +13723,12 @@
       "name_ja": "ワタッコ"
     },
     {
+      "id": 190,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "エイパム"
+    },
+    {
       "id": 191,
       "is_mythical": false,
       "is_legendary": false,
@@ -13021,10 +13741,22 @@
       "name_ja": "キマワリ"
     },
     {
+      "id": 193,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ヤンヤンマ"
+    },
+    {
       "id": 194,
       "is_mythical": false,
       "is_legendary": false,
       "name_ja": "ウパー"
+    },
+    {
+      "id": 195,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ヌオー"
     },
     {
       "id": 196,
@@ -13081,6 +13813,12 @@
       "name_ja": "ノコッチ"
     },
     {
+      "id": 207,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "グライガー"
+    },
+    {
       "id": 211,
       "is_mythical": false,
       "is_legendary": false,
@@ -13115,6 +13853,30 @@
       "is_mythical": false,
       "is_legendary": false,
       "name_ja": "リングマ"
+    },
+    {
+      "id": 218,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "マグマッグ"
+    },
+    {
+      "id": 219,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "マグカルゴ"
+    },
+    {
+      "id": 220,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ウリムー"
+    },
+    {
+      "id": 221,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "イノムー"
     },
     {
       "id": 225,
@@ -13175,6 +13937,54 @@
       "is_mythical": false,
       "is_legendary": false,
       "name_ja": "バンギラス"
+    },
+    {
+      "id": 261,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ポチエナ"
+    },
+    {
+      "id": 262,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "グラエナ"
+    },
+    {
+      "id": 270,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ハスボー"
+    },
+    {
+      "id": 271,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ハスブレロ"
+    },
+    {
+      "id": 272,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ルンパッパ"
+    },
+    {
+      "id": 273,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "タネボー"
+    },
+    {
+      "id": 274,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "コノハナ"
+    },
+    {
+      "id": 275,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ダーテング"
     },
     {
       "id": 278,
@@ -13267,6 +14077,12 @@
       "name_ja": "ルリリ"
     },
     {
+      "id": 299,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ノズパス"
+    },
+    {
       "id": 302,
       "is_mythical": false,
       "is_legendary": false,
@@ -13283,6 +14099,18 @@
       "is_mythical": false,
       "is_legendary": false,
       "name_ja": "チャーレム"
+    },
+    {
+      "id": 313,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "バルビート"
+    },
+    {
+      "id": 314,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "イルミーゼ"
     },
     {
       "id": 316,
@@ -13375,6 +14203,30 @@
       "name_ja": "ナマズン"
     },
     {
+      "id": 341,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ヘイガニ"
+    },
+    {
+      "id": 342,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "シザリガー"
+    },
+    {
+      "id": 349,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ヒンバス"
+    },
+    {
+      "id": 350,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ミロカロス"
+    },
+    {
       "id": 353,
       "is_mythical": false,
       "is_legendary": false,
@@ -13387,10 +14239,28 @@
       "name_ja": "ジュペッタ"
     },
     {
+      "id": 355,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ヨマワル"
+    },
+    {
+      "id": 356,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "サマヨール"
+    },
+    {
       "id": 357,
       "is_mythical": false,
       "is_legendary": false,
       "name_ja": "トロピウス"
+    },
+    {
+      "id": 358,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "チリーン"
     },
     {
       "id": 361,
@@ -13427,6 +14297,84 @@
       "is_mythical": false,
       "is_legendary": false,
       "name_ja": "ボーマンダ"
+    },
+    {
+      "id": 382,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "カイオーガ"
+    },
+    {
+      "id": 383,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "グラードン"
+    },
+    {
+      "id": 384,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "レックウザ"
+    },
+    {
+      "id": 385,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "ジラーチ"
+    },
+    {
+      "id": 387,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ナエトル"
+    },
+    {
+      "id": 388,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ハヤシガメ"
+    },
+    {
+      "id": 389,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ドダイトス"
+    },
+    {
+      "id": 390,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ヒコザル"
+    },
+    {
+      "id": 391,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "モウカザル"
+    },
+    {
+      "id": 392,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ゴウカザル"
+    },
+    {
+      "id": 393,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ポッチャマ"
+    },
+    {
+      "id": 394,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ポッタイシ"
+    },
+    {
+      "id": 395,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "エンペルト"
     },
     {
       "id": 396,
@@ -13519,6 +14467,12 @@
       "name_ja": "トリトドン"
     },
     {
+      "id": 424,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "エテボース"
+    },
+    {
       "id": 425,
       "is_mythical": false,
       "is_legendary": false,
@@ -13541,6 +14495,12 @@
       "is_mythical": false,
       "is_legendary": false,
       "name_ja": "ドンカラス"
+    },
+    {
+      "id": 433,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "リーシャン"
     },
     {
       "id": 434,
@@ -13601,6 +14561,12 @@
       "is_mythical": false,
       "is_legendary": false,
       "name_ja": "ガブリアス"
+    },
+    {
+      "id": 446,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ゴンベ"
     },
     {
       "id": 447,
@@ -13675,6 +14641,12 @@
       "name_ja": "ジバコイル"
     },
     {
+      "id": 469,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "メガヤンマ"
+    },
+    {
       "id": 470,
       "is_mythical": false,
       "is_legendary": false,
@@ -13687,10 +14659,34 @@
       "name_ja": "グレイシア"
     },
     {
+      "id": 472,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "グライオン"
+    },
+    {
+      "id": 473,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "マンムー"
+    },
+    {
       "id": 475,
       "is_mythical": false,
       "is_legendary": false,
       "name_ja": "エルレイド"
+    },
+    {
+      "id": 476,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ダイノーズ"
+    },
+    {
+      "id": 477,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ヨノワール"
     },
     {
       "id": 478,
@@ -13703,6 +14699,138 @@
       "is_mythical": false,
       "is_legendary": false,
       "name_ja": "ロトム"
+    },
+    {
+      "id": 480,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ユクシー"
+    },
+    {
+      "id": 481,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "エムリット"
+    },
+    {
+      "id": 482,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "アグノム"
+    },
+    {
+      "id": 483,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "ディアルガ"
+    },
+    {
+      "id": 484,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "パルキア"
+    },
+    {
+      "id": 485,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ヒードラン"
+    },
+    {
+      "id": 487,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "ギラティナ"
+    },
+    {
+      "id": 488,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "クレセリア"
+    },
+    {
+      "id": 489,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "フィオネ"
+    },
+    {
+      "id": 490,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "マナフィ"
+    },
+    {
+      "id": 491,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "ダークライ"
+    },
+    {
+      "id": 492,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "シェイミ"
+    },
+    {
+      "id": 493,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "アルセウス"
+    },
+    {
+      "id": 501,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ミジュマル"
+    },
+    {
+      "id": 502,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "フタチマル"
+    },
+    {
+      "id": 503,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ダイケンキ"
+    },
+    {
+      "id": 532,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ドッコラー"
+    },
+    {
+      "id": 533,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ドテッコツ"
+    },
+    {
+      "id": 534,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ローブシン"
+    },
+    {
+      "id": 540,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "クルミル"
+    },
+    {
+      "id": 541,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "クルマユ"
+    },
+    {
+      "id": 542,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ハハコモリ"
     },
     {
       "id": 548,
@@ -13771,6 +14899,18 @@
       "name_ja": "ゴチルゼル"
     },
     {
+      "id": 580,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "コアルヒー"
+    },
+    {
+      "id": 581,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "スワンナ"
+    },
+    {
       "id": 585,
       "is_mythical": false,
       "is_legendary": false,
@@ -13819,6 +14959,24 @@
       "name_ja": "シビルドン"
     },
     {
+      "id": 607,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ヒトモシ"
+    },
+    {
+      "id": 608,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ランプラー"
+    },
+    {
+      "id": 609,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "シャンデラ"
+    },
+    {
       "id": 610,
       "is_mythical": false,
       "is_legendary": false,
@@ -13855,6 +15013,18 @@
       "name_ja": "フリージオ"
     },
     {
+      "id": 619,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "コジョフー"
+    },
+    {
+      "id": 620,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "コジョンド"
+    },
+    {
       "id": 624,
       "is_mythical": false,
       "is_legendary": false,
@@ -13877,6 +15047,18 @@
       "is_mythical": false,
       "is_legendary": false,
       "name_ja": "ウォーグル"
+    },
+    {
+      "id": 629,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "バルチャイ"
+    },
+    {
+      "id": 630,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "バルジーナ"
     },
     {
       "id": 633,
@@ -13907,6 +15089,84 @@
       "is_mythical": false,
       "is_legendary": false,
       "name_ja": "ウルガモス"
+    },
+    {
+      "id": 641,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "トルネロス"
+    },
+    {
+      "id": 642,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ボルトロス"
+    },
+    {
+      "id": 645,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ランドロス"
+    },
+    {
+      "id": 648,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "メロエッタ"
+    },
+    {
+      "id": 650,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ハリマロン"
+    },
+    {
+      "id": 651,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ハリボーグ"
+    },
+    {
+      "id": 652,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ブリガロン"
+    },
+    {
+      "id": 653,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "フォッコ"
+    },
+    {
+      "id": 654,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "テールナー"
+    },
+    {
+      "id": 655,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "マフォクシー"
+    },
+    {
+      "id": 656,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ケロマツ"
+    },
+    {
+      "id": 657,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ゲコガシラ"
+    },
+    {
+      "id": 658,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ゲッコウガ"
     },
     {
       "id": 661,
@@ -14029,6 +15289,12 @@
       "name_ja": "デデンネ"
     },
     {
+      "id": 703,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "メレシー"
+    },
+    {
       "id": 704,
       "is_mythical": false,
       "is_legendary": false,
@@ -14051,6 +15317,18 @@
       "is_mythical": false,
       "is_legendary": false,
       "name_ja": "クレッフィ"
+    },
+    {
+      "id": 708,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ボクレー"
+    },
+    {
+      "id": 709,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "オーロット"
     },
     {
       "id": 712,
@@ -14077,6 +15355,42 @@
       "name_ja": "オンバーン"
     },
     {
+      "id": 719,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "ディアンシー"
+    },
+    {
+      "id": 720,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "フーパ"
+    },
+    {
+      "id": 721,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "ボルケニオン"
+    },
+    {
+      "id": 722,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "モクロー"
+    },
+    {
+      "id": 723,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "フクスロー"
+    },
+    {
+      "id": 724,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ジュナイパー"
+    },
+    {
       "id": 734,
       "is_mythical": false,
       "is_legendary": false,
@@ -14087,6 +15401,24 @@
       "is_mythical": false,
       "is_legendary": false,
       "name_ja": "デカグース"
+    },
+    {
+      "id": 736,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "アゴジムシ"
+    },
+    {
+      "id": 737,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "デンヂムシ"
+    },
+    {
+      "id": 738,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "クワガノン"
     },
     {
       "id": 739,
@@ -14105,6 +15437,18 @@
       "is_mythical": false,
       "is_legendary": false,
       "name_ja": "オドリドリ"
+    },
+    {
+      "id": 742,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "アブリー"
+    },
+    {
+      "id": 743,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "アブリボン"
     },
     {
       "id": 744,
@@ -14227,6 +15571,84 @@
       "name_ja": "ハギギシリ"
     },
     {
+      "id": 782,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ジャラコ"
+    },
+    {
+      "id": 783,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ジャランゴ"
+    },
+    {
+      "id": 784,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ジャラランガ"
+    },
+    {
+      "id": 801,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "マギアナ"
+    },
+    {
+      "id": 810,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "サルノリ"
+    },
+    {
+      "id": 811,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "バチンキー"
+    },
+    {
+      "id": 812,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ゴリランダー"
+    },
+    {
+      "id": 813,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ヒバニー"
+    },
+    {
+      "id": 814,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ラビフット"
+    },
+    {
+      "id": 815,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "エースバーン"
+    },
+    {
+      "id": 816,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "メッソン"
+    },
+    {
+      "id": 817,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ジメレオン"
+    },
+    {
+      "id": 818,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "インテレオン"
+    },
+    {
       "id": 819,
       "is_mythical": false,
       "is_legendary": false,
@@ -14317,6 +15739,12 @@
       "name_ja": "サダイジャ"
     },
     {
+      "id": 845,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ウッウ"
+    },
+    {
       "id": 846,
       "is_mythical": false,
       "is_legendary": false,
@@ -14389,6 +15817,12 @@
       "name_ja": "オーロンゲ"
     },
     {
+      "id": 863,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ニャイキング"
+    },
+    {
       "id": 870,
       "is_mythical": false,
       "is_legendary": false,
@@ -14431,6 +15865,12 @@
       "name_ja": "イエッサン"
     },
     {
+      "id": 877,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "モルペコ"
+    },
+    {
       "id": 878,
       "is_mythical": false,
       "is_legendary": false,
@@ -14459,6 +15899,114 @@
       "is_mythical": false,
       "is_legendary": false,
       "name_ja": "ドラパルト"
+    },
+    {
+      "id": 888,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "ザシアン"
+    },
+    {
+      "id": 889,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "ザマゼンタ"
+    },
+    {
+      "id": 890,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "ムゲンダイナ"
+    },
+    {
+      "id": 891,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ダクマ"
+    },
+    {
+      "id": 892,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ウーラオス"
+    },
+    {
+      "id": 893,
+      "is_mythical": true,
+      "is_legendary": false,
+      "name_ja": "ザルード"
+    },
+    {
+      "id": 894,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "レジエレキ"
+    },
+    {
+      "id": 895,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "レジドラゴ"
+    },
+    {
+      "id": 896,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ブリザポス"
+    },
+    {
+      "id": 897,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "レイスポス"
+    },
+    {
+      "id": 898,
+      "is_mythical": false,
+      "is_legendary": true,
+      "name_ja": "バドレックス"
+    },
+    {
+      "id": 899,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "アヤシシ"
+    },
+    {
+      "id": 900,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "バサギリ"
+    },
+    {
+      "id": 901,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ガチグマ"
+    },
+    {
+      "id": 902,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "イダイトウ"
+    },
+    {
+      "id": 903,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "オオニューラ"
+    },
+    {
+      "id": 904,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ハリーマン"
+    },
+    {
+      "id": 905,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ラブトロス"
     },
     {
       "id": 906,
@@ -15033,25 +16581,25 @@
     {
       "id": 1001,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "チオンジェン"
     },
     {
       "id": 1002,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "パオジアン"
     },
     {
       "id": 1003,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "ディンルー"
     },
     {
       "id": 1004,
       "is_mythical": false,
-      "is_legendary": true,
+      "is_legendary": false,
       "name_ja": "イーユイ"
     },
     {
@@ -15077,6 +16625,60 @@
       "is_mythical": false,
       "is_legendary": true,
       "name_ja": "ミライドン"
+    },
+    {
+      "id": 1009,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ウネルミナモ"
+    },
+    {
+      "id": 1010,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "テツノイサハ"
+    },
+    {
+      "id": 1011,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "カミッチュ"
+    },
+    {
+      "id": 1012,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "チャデス"
+    },
+    {
+      "id": 1013,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "ヤバソチャ"
+    },
+    {
+      "id": 1014,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "イイネイヌ"
+    },
+    {
+      "id": 1015,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "マシマシラ"
+    },
+    {
+      "id": 1016,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "キチキギス"
+    },
+    {
+      "id": 1017,
+      "is_mythical": false,
+      "is_legendary": false,
+      "name_ja": "オーガポン"
     }
   ]
 }
