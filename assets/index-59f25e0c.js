@@ -150,17 +150,24 @@ Error generating stack: `+l.message+`
 # 朝ズバ系構築ジェネレーター
 
 ## これはなに？
-- 👉 [けだまメモchウィキ > 用語集 > 朝ズバッ！](https://wikiwiki.jp/kedamamemo/%E7%94%A8%E8%AA%9E%E9%9B%86#ua07c323)
+
+- 👉 [けだまメモ ch ウィキ > 用語集 > 朝ズバッ！](https://wikiwiki.jp/kedamamemo/%E7%94%A8%E8%AA%9E%E9%9B%86#ua07c323)
 - ポケモン名の一部を繋げて語呂合わせをする、通称「朝ズバ系構築」を生成するツールです
 
 ## 使い方
+
 - 語呂合わせにしたいフレーズを入力して「生成」を押すと、フレーズの分割と対応するポケモンの例が表示されます
 - 接頭辞のみ：ポケモン名の一部を取るときに、頭の部分だけを使用します。
-  - 例：フシギダネ → フシギ はOK、フシギダネ → ダネ はNG
+  - 例：フシギダネ → フシギ は OK、フシギダネ → ダネ は NG
 - 重複あり：同名のポケモンを複数匹採用することを許可します
 
 ## 既知の問題
-- SVはPokémon HOME連携および碧の仮面で追加されたポケモン未対応です
+
+- SV は Pokémon HOME 連携および碧の仮面で追加されたポケモン未対応です
 - 入力によってはパーティ案の個数が膨大になりブラウザーが固まることがあります
   - 例：パーティー名 = "ぎぎぎぎぎぎぎぎぎぎぎぎ" など
-`;function Nc(e){const n=parseInt(e,10);return 2<=n&&n<=12}function S8(){const[e,n]=k.useState("みのもんたのあさずばっ"),[a,t]=k.useState(!0),[i,l]=k.useState("6"),[s,r]=k.useState("pokemons_gen6"),[o,c]=k.useState(!1),[u,d]=k.useState(!1),[f,m]=k.useState(!1),p=parseInt(i),g=()=>Mx(e,{numPokemon:p,useOnlyPrefix:a,allowLegendary:o,allowMythical:u,pokemonPool:s,allowDuplicate:f}),[C,_]=k.useState(g());return P.jsx(H4,{className:"App",sx:{margin:3},children:P.jsxs(Oi,{spacing:3,children:[P.jsxs(Oi,{spacing:1,children:[P.jsx(Y_,{label:"パーティー名",variant:"outlined",value:e,onChange:y=>n(y.target.value)}),P.jsxs(xC,{row:!0,sx:{alignItems:"center",gap:1},children:[P.jsx(hf,{children:"使用ポケモン"}),P.jsxs(y1,{value:s,onChange:y=>{r(y.target.value)},sx:{m:1,minWidth:180},children:[P.jsx(Cs,{value:"pokemons_gen6",children:"XY/ORAS"}),P.jsx(Cs,{value:"pokemons_gen7",children:"SM/USUM"}),P.jsx(Cs,{value:"pokemons_gen8",children:"SwSh"}),P.jsx(Cs,{value:"pokemons_gen9",children:"SV (一部未対応)"})]}),P.jsx(ws,{control:P.jsx(Ss,{checked:o,onChange:y=>c(y.target.checked)}),label:"伝説あり"}),P.jsx(ws,{control:P.jsx(Ss,{checked:u,onChange:y=>d(y.target.checked)}),label:"幻あり"}),P.jsx(ws,{control:P.jsx(Ss,{checked:a,onChange:y=>t(y.target.checked)}),label:"接頭辞のみ"}),P.jsx(ws,{control:P.jsx(Ss,{checked:f,onChange:y=>m(y.target.checked)}),label:"重複あり"}),P.jsx(Y_,{label:"ポケモンの数",variant:"outlined",value:i,onChange:y=>l(y.target.value),error:!Nc(i),helperText:Nc(i)?"":"2以上12以下の整数を入力してください"})]}),P.jsx(k4,{variant:"contained",onClick:()=>{Nc(i)&&_(g())},children:"生成"})]}),P.jsx(a6,{parties:C}),P.jsx(x8,{className:"ReadMe",children:b8})]})})}zc.createRoot(document.getElementById("root")).render(P.jsx(da.StrictMode,{children:P.jsx(S8,{})}));
+
+## ソースコード
+
+- GitHub: <https://github.com/ukikagi/pokeasa-generator>
+  `;function Nc(e){const n=parseInt(e,10);return 2<=n&&n<=12}function S8(){const[e,n]=k.useState("みのもんたのあさずばっ"),[a,t]=k.useState(!0),[i,l]=k.useState("6"),[s,r]=k.useState("pokemons_gen6"),[o,c]=k.useState(!1),[u,d]=k.useState(!1),[f,m]=k.useState(!1),p=parseInt(i),g=()=>Mx(e,{numPokemon:p,useOnlyPrefix:a,allowLegendary:o,allowMythical:u,pokemonPool:s,allowDuplicate:f}),[C,_]=k.useState(g());return P.jsx(H4,{className:"App",sx:{margin:3},children:P.jsxs(Oi,{spacing:3,children:[P.jsxs(Oi,{spacing:1,children:[P.jsx(Y_,{label:"パーティー名",variant:"outlined",value:e,onChange:y=>n(y.target.value)}),P.jsxs(xC,{row:!0,sx:{alignItems:"center",gap:1},children:[P.jsx(hf,{children:"使用ポケモン"}),P.jsxs(y1,{value:s,onChange:y=>{r(y.target.value)},sx:{m:1,minWidth:180},children:[P.jsx(Cs,{value:"pokemons_gen6",children:"XY/ORAS"}),P.jsx(Cs,{value:"pokemons_gen7",children:"SM/USUM"}),P.jsx(Cs,{value:"pokemons_gen8",children:"SwSh"}),P.jsx(Cs,{value:"pokemons_gen9",children:"SV (一部未対応)"})]}),P.jsx(ws,{control:P.jsx(Ss,{checked:o,onChange:y=>c(y.target.checked)}),label:"伝説あり"}),P.jsx(ws,{control:P.jsx(Ss,{checked:u,onChange:y=>d(y.target.checked)}),label:"幻あり"}),P.jsx(ws,{control:P.jsx(Ss,{checked:a,onChange:y=>t(y.target.checked)}),label:"接頭辞のみ"}),P.jsx(ws,{control:P.jsx(Ss,{checked:f,onChange:y=>m(y.target.checked)}),label:"重複あり"}),P.jsx(Y_,{label:"ポケモンの数",variant:"outlined",value:i,onChange:y=>l(y.target.value),error:!Nc(i),helperText:Nc(i)?"":"2以上12以下の整数を入力してください"})]}),P.jsx(k4,{variant:"contained",onClick:()=>{Nc(i)&&_(g())},children:"生成"})]}),P.jsx(a6,{parties:C}),P.jsx(x8,{className:"ReadMe",children:b8})]})})}zc.createRoot(document.getElementById("root")).render(P.jsx(da.StrictMode,{children:P.jsx(S8,{})}));
