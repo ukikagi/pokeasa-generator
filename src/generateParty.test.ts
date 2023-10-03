@@ -1,4 +1,4 @@
-import { expect, test } from 'vitest'
+import { expect, test } from "vitest";
 import { generateParty } from "./generateParty";
 
 test("Generates party end-to-end", () => {
@@ -9,6 +9,7 @@ test("Generates party end-to-end", () => {
       allowLegendary: true,
       allowMythical: true,
       pokemonPool: "pokemons_gen6",
+      allowDuplicate: false,
     })
   ).not.toEqual([]);
   expect(
@@ -18,6 +19,7 @@ test("Generates party end-to-end", () => {
       allowLegendary: true,
       allowMythical: true,
       pokemonPool: "pokemons_gen6",
+      allowDuplicate: false,
     })
   ).not.toEqual([]);
 });
